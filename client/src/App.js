@@ -26,7 +26,7 @@ const[id, setId] = useState('')
         <Router>
           <HomePage path='/' player={player} setPlayer={setPlayer} id={id} setId={setId} />
           <AddPage path='/add' name={name} setName={setName} position={position} setPosition={setPosition} player={player} setPlayer={setPlayer} />
-          <EditPage path='/manage/:id' name={name} setName={setName} position={position} setPosition={setPosition} id={id} setId={setId } player={player} setPlayer={setPlayer} />
+          <EditPage path='/manage/:_id' name={name} setName={setName} position={position} setPosition={setPosition} id={id} setId={setId } player={player} setPlayer={setPlayer} />
         </Router>
       </div>
     </div>

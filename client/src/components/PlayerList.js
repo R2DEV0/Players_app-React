@@ -10,10 +10,14 @@ export default (props) => {
         setPlayer(player.filter(player => player._id !== id))
     }
 
+    const move = (id) =>{
+        navigate('/manage/'+id)
+    }
+
     const onClick = (e) => {
         e.preventDefault();
         setId(e.target.id)
-        navigate('/manage/'+id)
+        move();
     }
 
     return(
